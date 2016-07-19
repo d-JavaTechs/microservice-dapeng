@@ -24,12 +24,15 @@
         <processorPath useClasspath="true" />
         <module name="skill-api" />
         <module name="skill-service" />
+        <module name="skill-webfacade" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="microservice-dapeng" target="1.8" />
       <module name="skill-api" target="1.8" />
       <module name="skill-service" target="1.8" />
+      <module name="skill-webfacade" target="1.8" />
+      <module name="userinterface" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

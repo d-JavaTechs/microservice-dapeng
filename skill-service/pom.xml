@@ -24,6 +24,14 @@
     </properties>
 
     <dependencies>
+        <!-- api -->
+        <dependency>
+            <groupId>pn.eric.microservice</groupId>
+            <artifactId>skill-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
         <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -31,21 +39,16 @@
             <version>${org.springframework-version}</version>
         </dependency>
 
-        <!-- api -->
-        <dependency>
-            <groupId>com.isuwang</groupId>
-            <artifactId>category-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
         <!-- isuwang soa -->
         <dependency>
             <groupId>com.isuwang</groupId>
-            <artifactId>isuwang-soa-spring</artifactId>
+            <artifactId>dapeng-spring</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.isuwang</groupId>
-            <artifactId>isuwang-scala-dbc</artifactId>
+            <artifactId>dapeng-scala-dbc</artifactId>
         </dependency>
 
         <!--log-->
@@ -79,11 +82,17 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.alibaba</groupId>
+                    <artifactId>tools</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
             <groupId>com.isuwang</groupId>
-            <artifactId>isuwang-soa-monitor-druid</artifactId>
+            <artifactId>dapeng-monitor-druid</artifactId>
         </dependency>
     </dependencies>
 

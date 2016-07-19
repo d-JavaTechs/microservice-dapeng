@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-dapeng.iml" filepath="$PROJECT_DIR$/microservice-dapeng.iml" />
       <module fileurl="file://$PROJECT_DIR$/skill-api/skill-api.iml" filepath="$PROJECT_DIR$/skill-api/skill-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/skill-service/skill-service.iml" filepath="$PROJECT_DIR$/skill-service/skill-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skill-webfacade/skill-webfacade.iml" filepath="$PROJECT_DIR$/skill-webfacade/skill-webfacade.iml" />
     </modules>
   </component>
 </project>

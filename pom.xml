@@ -8,6 +8,7 @@
   <modules>
     <module>skill-api</module>
     <module>skill-service</module>
+    <module>skill-webfacade</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -19,9 +20,22 @@
     <java-version>1.8</java-version>
     <slf4j-version>1.7.13</slf4j-version>
     <logback-version>1.1.3</logback-version>
-    <isuwangsoa-version>1.0-SNAPSHOT</isuwangsoa-version>
+    <isuwangsoa-version>1.1-SNAPSHOT</isuwangsoa-version>
     <druid-version>1.0.17</druid-version>
   </properties>
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <name>Nexus Releases Repository</name>
+      <url>http://nexus.oa.isuwang.com/content/repositories/releases/</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>Nexus Snapshots Repository</name>
+      <url>http://nexus.oa.isuwang.com/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <repositories>
     <repository>
@@ -74,23 +88,24 @@
 
   <dependencyManagement>
     <dependencies>
+
       <!-- soa -->
       <dependency>
         <groupId>com.isuwang</groupId>
-        <artifactId>isuwang-soa-core</artifactId>
-        <version>${isuwangsoa-version}</version>
+        <artifactId>dapeng-core</artifactId>
+        <version>1.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.isuwang</groupId>
-        <artifactId>isuwang-soa-remoting-api</artifactId>
-        <version>${isuwangsoa-version}</version>
+        <artifactId>dapeng-remoting-api</artifactId>
+        <version>1.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.isuwang</groupId>
-        <artifactId>isuwang-soa-spring</artifactId>
-        <version>${isuwangsoa-version}</version>
+        <artifactId>dapeng-spring</artifactId>
+        <version>1.1-SNAPSHOT</version>
         <exclusions>
           <exclusion>
             <groupId>org.springframework</groupId>
@@ -101,14 +116,14 @@
 
       <dependency>
         <groupId>com.isuwang</groupId>
-        <artifactId>isuwang-soa-monitor-druid</artifactId>
-        <version>${isuwangsoa-version}</version>
+        <artifactId>dapeng-monitor-druid</artifactId>
+        <version>1.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.isuwang</groupId>
-        <artifactId>isuwang-scala-dbc</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>dapeng-scala-dbc</artifactId>
+        <version>1.1-SNAPSHOT</version>
       </dependency>
 
       <!-- alibaba -->

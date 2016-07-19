@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service namespace="pn.eric.microservice.skill.service" name="SkillService">
+    <doc>
+
+ 技能服务
+</doc>
+    <meta>
+        <version>1.0.0</version>
+        <timeout>30000</timeout>
+    </meta>
+    <methods>
+        <method name="addSkill">
+            <doc>
+
+            ### 概述   添加技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="addSkill_args">
+                <fields>
+                    <field tag="1" name="tSkill" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="addSkill_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                        </dataType>
+                        <doc>
+
+            ### 概述   添加技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="deleteSkill">
+            <doc>
+
+            ### 概述   删除技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="deleteSkill_args">
+                <fields>
+                    <field tag="1" name="id" optional="false" privacy="false">
+                        <dataType>
+                            <kind>INTEGER</kind>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="deleteSkill_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>VOID</kind>
+                        </dataType>
+                        <doc>
+
+            ### 概述   删除技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="updateSkill">
+            <doc>
+
+            ### 概述   修改技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="updateSkill_args">
+                <fields>
+                    <field tag="1" name="tSkill" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="updateSkill_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>VOID</kind>
+                        </dataType>
+                        <doc>
+
+            ### 概述   修改技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="findSkillById">
+            <doc>
+
+            ### 概述   根据主键查找技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="findSkillById_args">
+                <fields>
+                    <field tag="1" name="id" optional="false" privacy="false">
+                        <dataType>
+                            <kind>INTEGER</kind>
+                        </dataType>
+                        <doc></doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="findSkillById_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                        </dataType>
+                        <doc>
+
+            ### 概述   根据主键查找技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="getAllSkills">
+            <doc>
+
+            ### 概述   获取所有技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="getAllSkills_args">
+                <fields/>
+            </request>
+            <response name="getAllSkills_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>LIST</kind>
+                            <valueType>
+<kind>STRUCT</kind>
+<ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                            </valueType>
+                        </dataType>
+                        <doc>
+
+            ### 概述   获取所有技能
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+        <method name="querySkills">
+            <doc>
+
+            ### 概述   分页查询
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+            <request name="querySkills_args">
+                <fields>
+                    <field tag="1" name="pageRequest" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkillPageRequest</ref>
+                        </dataType>
+                        <doc>分页请求信息</doc>
+                    </field>
+                    <field tag="2" name="tSkillQueryCondition" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkillQueryCondition</ref>
+                        </dataType>
+                        <doc>快塑报价查询条件</doc>
+                    </field>
+                </fields>
+            </request>
+            <response name="querySkills_result">
+                <fields>
+                    <field tag="0" name="success" optional="false" privacy="false">
+                        <dataType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkillQueryResponse</ref>
+                        </dataType>
+                        <doc>
+
+            ### 概述   分页查询
+            ####  业务描述
+            ####  接口依赖
+            ####  边界异常说明
+            ####  输入
+            ####  前置检查
+            ####  权限检查
+            ####  逻辑处理
+            ####  事务处理
+            ####  输出
+</doc>
+                    </field>
+                </fields>
+            </response>
+            <isSoaTransactionProcess>false</isSoaTransactionProcess>
+        </method>
+    </methods>
+    <structs>
+        <struct namespace="pn.eric.microservice.skill.dto" name="TSkill">
+            <fields>
+                <field tag="1" name="id" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+
+</doc>
+                </field>
+                <field tag="2" name="name" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                    <doc>
+
+ 名称
+</doc>
+                </field>
+                <field tag="3" name="code" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                    <doc>
+
+ 编码
+</doc>
+                </field>
+                <field tag="4" name="level" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 熟练程度,0:一般(general);1:熟悉(familiar);2:精通(proficient)
+</doc>
+                </field>
+                <field tag="5" name="createdAt" optional="false" privacy="false">
+                    <dataType>
+                        <kind>LONG</kind>
+                    </dataType>
+                    <doc>
+
+ 创建时间
+</doc>
+                </field>
+                <field tag="6" name="updatedAt" optional="false" privacy="false">
+                    <dataType>
+                        <kind>LONG</kind>
+                    </dataType>
+                    <doc>
+
+ 修改时间
+</doc>
+                </field>
+            </fields>
+        </struct>
+        <struct namespace="pn.eric.microservice.skill.dto" name="TSkillPageRequest">
+            <fields>
+                <field tag="1" name="start" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 查询的开始序号（序号从零开始）
+</doc>
+                </field>
+                <field tag="2" name="limit" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 返回记录数
+</doc>
+                </field>
+                <field tag="3" name="sortFields" optional="true" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                    <doc>
+
+ 排序的字段
+</doc>
+                </field>
+            </fields>
+        </struct>
+        <struct namespace="pn.eric.microservice.skill.dto" name="TSkillPageRespone">
+            <fields>
+                <field tag="1" name="start" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 查询的开始序号（序号从零开始）
+</doc>
+                </field>
+                <field tag="2" name="limit" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 最大返回的记录数
+</doc>
+                </field>
+                <field tag="3" name="results" optional="false" privacy="false">
+                    <dataType>
+                        <kind>INTEGER</kind>
+                    </dataType>
+                    <doc>
+
+ 结果记录数
+</doc>
+                </field>
+            </fields>
+        </struct>
+        <struct namespace="pn.eric.microservice.skill.dto" name="TSkillQueryResponse">
+            <doc>
+
+ 快塑报价查询结果
+</doc>
+            <fields>
+                <field tag="1" name="pageResponse" optional="false" privacy="false">
+                    <dataType>
+                        <kind>STRUCT</kind>
+                        <ref>pn.eric.microservice.skill.dto.TSkillPageRespone</ref>
+                    </dataType>
+                    <doc>
+
+ 分页结果信息
+</doc>
+                </field>
+                <field tag="2" name="skills" optional="false" privacy="false">
+                    <dataType>
+                        <kind>LIST</kind>
+                        <valueType>
+                            <kind>STRUCT</kind>
+                            <ref>pn.eric.microservice.skill.dto.TSkill</ref>
+                        </valueType>
+                    </dataType>
+                    <doc>
+
+ 报价信息
+</doc>
+                </field>
+            </fields>
+        </struct>
+        <struct namespace="pn.eric.microservice.skill.dto" name="TSkillQueryCondition">
+            <doc>
+
+ 快塑报价查询条件
+</doc>
+            <fields>
+                <field tag="1" name="name" optional="true" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                    <doc>
+
+ 名字 like
+</doc>
+                </field>
+                <field tag="2" name="codes" optional="true" privacy="false">
+                    <dataType>
+                        <kind>LIST</kind>
+                        <valueType>
+                            <kind>STRING</kind>
+                        </valueType>
+                    </dataType>
+                    <doc>     in
+ 代号
+</doc>
+                </field>
+                <field tag="3" name="level" optional="true" privacy="false">
+                    <dataType>
+                        <kind>STRING</kind>
+                    </dataType>
+                    <doc>   =
+ 级别
+</doc>
+                </field>
+            </fields>
+        </struct>
+    </structs>
+    <enums>
+        <tenum namespace="pn.eric.microservice.skill.enums" name="SkillLevel">
+            <doc>
+
+熟练程度
+</doc>
+            <items>
+                <item>
+                    <label>GENERAL</label>
+                    <value>0</value>
+                    <doc>
+
+一般
+</doc>
+                </item>
+                <item>
+                    <label>FAMILIAR</label>
+                    <value>1</value>
+                    <doc>
+
+熟悉
+</doc>
+                </item>
+                <item>
+                    <label>PROFICIENT</label>
+                    <value>2</value>
+                    <doc>
+
+精通
+</doc>
+                </item>
+            </items>
+        </tenum>
+    </enums>
+</service>
